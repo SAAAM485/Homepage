@@ -35,16 +35,79 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 30rem;
+  background-color: #e73c7e1f;
+}
+
+.profileP {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  margin-right: 2rem;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: -0.5rem;
+  font-size: 3rem;
 }
 
 .mainContainer {
   flex-grow: 1;
   margin: 0 3rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-image: url("./media/bagel.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 20vw auto;
+  padding: 5rem 15rem;
+}
+
+.projectL {
+  text-decoration: none;
+  padding-bottom: 5rem;
+  max-width: calc(25vw - 15rem);
+  height: max-content;
+  background-color: #dadadaee;
+  border-radius: 2.5rem;
+  margin: 2.5rem 1.5rem;
+  box-shadow:
+    rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImg {
+  object-fit: cover;
+  border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.projectName {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.projectD {
+  margin: 1rem 2rem;
+  font-size: 1rem;
 }
 
 footer {
@@ -52,11 +115,106 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #ee7652d8;
-  height: 10vh;
+  padding: 5rem;
 }
 
-@media (600px <= max-width < 1200px) {
+@media (600px < width < 1600px) {
+  body {
+    background-size: 400% 200vh;
+  }
+  header {
+    flex-direction: column;
+    padding: 2rem 5rem;
+  }
+  .headerText {
+    align-items: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .profileP {
+    margin-right: 0;
+  }
+  .mainContainer {
+    padding: 2rem 3rem;
+    margin: 0;
+  }
+  .projectL {
+    height: 20rem;
+    max-width: calc(50vw - 8rem);
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+    margin: 2rem 2rem;
+  }
+  .projectImg {
+    object-fit: cover;
+    border-radius: 2rem 2rem 0 0;
+  }
+  .projectName {
+    margin-top: 1rem;
+  }
+  .projectD {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  footer {
+    padding: 2rem;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 600px) {
+  body {
+    background-size: 400% 200vh;
+  }
+  header {
+    flex-direction: column;
+    padding: 2rem 5rem;
+  }
+  .headerText {
+    align-items: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .profileP {
+    margin-right: 0;
+  }
+  .mainContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 2rem 3rem;
+    margin: 2rem 0;
+    background-size: 100vw auto;
+  }
+  .projectL {
+    height: auto;
+    max-width: calc(100vw - 6rem);
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+    margin: 2rem 0;
+  }
+  .projectImg {
+    object-fit: cover;
+    border-radius: 2rem 2rem 0 0;
+  }
+  .projectName {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .projectD {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+  }
+  footer {
+    padding: 2rem;
+  }
 }
