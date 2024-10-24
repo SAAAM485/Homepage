@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Dropdown Menu Image Carousel Practice",
+      title: "Bagel's Homepage",
       template: "./src/index.html",
     }),
   ],

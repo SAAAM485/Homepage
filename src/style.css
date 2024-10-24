@@ -34,96 +34,7 @@ body {
   }
 }
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 3rem;
-  background-color: #23d5aba4;
-}
-
-.dropBar {
-  display: none;
-}
-
-.dropBar.visible {
-  display: block;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45rem;
-  width: 60rem;
-}
-
-.pic {
-  display: none;
-}
-
-.pic.visible {
-  display: block;
-}
-
-.pic img {
-  max-height: 45rem;
-  max-width: 60rem;
-}
-
-.nav.visible {
-  background-color: #ee7752;
-}
-
-.sidebar > * {
-  list-style-type: none;
-}
-
-.sidebar > ul {
-  border: 0.1rem #ee7752 solid;
-}
-
-.sidebar button {
-  border: none;
-  background-color: #ee7752;
-  border-radius: 0;
-  width: 12vw;
-  margin: 0 0 1rem -1rem;
-  font-size: 1.3rem;
-  text-align: left;
-}
-
-.sidebar button:hover {
-  color: white;
-  background-color: #e99e87;
-}
-
-button:active {
-  background-color: #e2dad6;
-  border: 0.1rem solid #6482ad;
-  color: #6482ad;
-  transform: translateY(0.02rem);
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ee7652d8;
-  height: 10vh;
-}
-
-button {
-  border: #1f2937 0.1rem solid;
-  border-radius: 2rem;
-  background-color: rgb(247, 252, 255);
-  color: black;
-  align-self: center;
-}
-
-button:hover {
-  background-color: transparent;
+header {
 }
 
 .mainContainer {
@@ -136,13 +47,16 @@ button:hover {
   background-image: url("./media/bagel.png");
 }
 
-.navContainer {
-  margin-top: 0.5rem;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ee7652d8;
+  height: 10vh;
 }
 
-.nav {
-  margin: 0 0.14rem;
-  height: 1rem;
-  width: 1rem;
-  border: none;
+@media (600px <= max-width < 1200px) {
+}
+
+@media (min-width: 1200px) {
 }
